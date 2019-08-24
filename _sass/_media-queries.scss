@@ -1,0 +1,116 @@
+//This happens on the small screen
+@media screen and (max-width: $viewport-small ) { 
+  .looking-image {
+      //display:none;
+      position: relative;
+      margin:auto;
+      width: 115px;
+      height: 75px;
+      left: 0px;
+      top: 7px;
+  }
+
+  .looking-image .img {
+      background-repeat: no-repeat;
+  }
+
+  .site-header {
+    padding-bottom: 0px;
+    border-bottom: 2px solid #cdcdcd;
+  }
+
+
+  .site-header .site-title {
+      float: none;
+      letter-spacing: 0px;
+      font-size: 2rem;
+   }
+
+  .site-header .subtitle {
+      font-size: 1rem;
+      float: none;
+   }
+
+   .measure {
+      padding-left: 0rem; 
+   }
+
+   html {
+       font-size:14px;
+  }
+
+}
+
+// This happens on a normal screen
+@media screen and (min-width: $viewport-small) {
+
+  html {
+    font-size: 18px;
+  }
+
+  h1,
+  .h1 {
+    font-size: $h1;
+  }
+
+  .site-header {
+    text-align: left;
+  }
+   
+  .measure {
+      padding-left: 1rem; 
+  }
+
+  .site-nav {
+    margin-top: 0;
+  }
+
+  .site-header a {
+    font-size: $h4;
+  }
+
+  .site-header .site-title {
+    font-size: $h0;
+    //float: left;
+    font-family: $title-font-family;
+  }
+
+  .site-header .site-nav {
+    float: right;
+//    margin-top: .25rem;
+  }
+
+  blockquote {
+    //margin-left: $space-3;
+    //padding: $space-3;
+  }
+
+
+}
+
+@media screen and (max-width: $viewport-medium) {
+  html {
+  }
+  .page-navigation { 
+    display:none;
+  }
+  .post-header {
+      border-top: none;
+  }
+  .bottom-border {
+      border-bottom: none;
+  }
+}
+
+@media screen and (min-width: $viewport-large) {
+  html {
+    //font-size: 20px;
+  }
+}
+
+@media screen and (min-width: $viewport-large + 14) {
+  em img {
+    max-width: $measure-width + 14;
+    margin-left: -7em;
+  }
+}

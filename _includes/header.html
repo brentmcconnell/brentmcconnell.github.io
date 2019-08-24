@@ -1,0 +1,20 @@
+<header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <div class="title">
+          <a href="{{ "/" | relative_url }}" class="site-title">{{ site.title }}</a>
+      </div>
+      {% if site.subtitle %}
+      <div class="subtitle">
+          <a href="{{ "/" | relative_url }}">
+              {{ site.subtitle }}
+          </a>
+      </div>
+      {% endif %}
+      <figure class="looking-image">
+        <div class="img" href="{{ site.baseurl }}" style="background-image: url(/images/site/looking13.svg)"/>
+      </figure>
+    </div>
+  </div>
+</header>
+<div class="clearfix"></div>

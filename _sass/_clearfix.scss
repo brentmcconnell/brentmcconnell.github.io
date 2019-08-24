@@ -1,0 +1,9 @@
+.clearfix:before, .clearfix:after {
+  content: ' ';
+  display: table;
+  visibility: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
