@@ -5,7 +5,7 @@ permalink: /about/
 tags: about
 ---
 
-Hi, I'm Brent McConnell.  I am currently employed as a Cloud Solution
+Hello, I'm Brent McConnell.  I am currently employed as a Cloud Solution
 Architect with Microsoft where I help customers and partners migrate workload to
 Azure.
 
