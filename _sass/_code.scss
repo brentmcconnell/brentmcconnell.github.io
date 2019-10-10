@@ -7,7 +7,7 @@ pre code {
 pre,
 code {
   font-family: $monospace-font-family;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
 }
 
 code {
@@ -74,7 +74,7 @@ pre a:only-of-type::before {
 .language-terminal {
   position: relative;
   margin-bottom: 1.5em;
-  padding: calc(#{$terminal-window-height} + 1em) 1em 1em;
+  padding: calc(#{$terminal-window-height} + 0.5em) 1em 1em;
   border: 1px solid $border-color;
   border-radius: $border-radius;
   box-shadow: 0 0.25em 1em rgba($base-color, 0.25);
@@ -88,10 +88,10 @@ pre a:only-of-type::before {
     width: 100%;
 //    height: $terminal-window-height;
     margin: 0;
-    padding: (0.3 * $terminal-window-height) 0 (0.4 * $terminal-window-height) 0;
+    padding: (0.35 * $terminal-window-height) 0 (0.25 * $terminal-window-height) 0;
     background: mix($base-color, #fff, 25%);
     color: mix($base-color, #fff, 50%);
-    font-size: (1.5 * $terminal-window-height);
+    font-size: (1.25 * $terminal-window-height);
     line-height: 0;
     text-indent: (0.25 * $terminal-window-height);
   }

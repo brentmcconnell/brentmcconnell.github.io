@@ -7,8 +7,9 @@
       width: 115px;
       height: 75px;
       left: 0px;
-      top: 7px;
+      top: 9px;
   }
+
 
   .looking-image .img {
       background-repeat: no-repeat;
@@ -16,7 +17,7 @@
 
   .site-header {
     padding-bottom: 0px;
-    border-bottom: 2px solid #cdcdcd;
+    // border-bottom: 2px solid #cdcdcd;
   }
 
 
@@ -100,6 +101,10 @@
   .bottom-border {
       border-bottom: none;
   }
+  .small-image {
+      width: 100%;
+  }
+
 }
 
 @media screen and (min-width: $viewport-large) {

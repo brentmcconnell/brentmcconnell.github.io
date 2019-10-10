@@ -249,7 +249,7 @@ Usually, if we were on a Windows build agent we would use the AzFileCopy task to
 move files to an Azure Storage Account but in this case if you try it will
 produce an error and explain that it's not available on Linux.  But luckily we
 can use the __AzureCLI__ task instead to the same effect.  One of the
-subcommands of __az stroage blob__ is __update-batch__ which performs the same
+subcommands of __az storage blob__ is __update-batch__ which performs the same
 basic function as AzCopy.
 
 ```terminal

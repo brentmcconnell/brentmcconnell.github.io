@@ -3,11 +3,16 @@
     width: auto;
 }
 
+.title a {
+  text-shadow: none;
+}
+
 .site-header {
   padding: 1rem 0 1rem 0;
   //padding-bottom: $space-2;
   background-color: $header-bg-color;
-  border-bottom: 2px solid #cdcdcd;
+  //border-bottom: 2px solid #cdcdcd;
+  //border-bottom: 5px solid steelblue;
 }
 
 .site-header a {
@@ -33,12 +38,13 @@
   color:$title-color;
   //padding-bottom: 1.5rem;
   //float: left;
-  letter-spacing:1px;
+  letter-spacing: -0.5px;
 }
 
 .subtitle a {
-    color: $blue;
+    color: darkslategray;
     font-size: 1.18rem !important;
+    text-shadow: none;
 }
 
 .site-nav {
@@ -85,7 +91,7 @@
   box-sizing: border-box;
   display: block;
   position: absolute;
-  top: 53px;
+  top: 54px;
   left: 65%;
   width: 140px;
   height: 90px;
@@ -103,4 +109,18 @@
   height: 100%;
   background-size: cover;
   background-position: center center;
+}
+
+.wallborder {
+    height: 2px;
+    border-top: 1px solid #efefef;
+    //background-color: steelblue;
+    background-color: $header-bg-color;;
+    box-shadow: 0px 2px 5px 2px #fff;
+}
+
+.wallborder2 {
+    height:2px;
+    background-color: $header-bg-color;
+    box-shadow: 0px 2px 5px 0px #555;
 }

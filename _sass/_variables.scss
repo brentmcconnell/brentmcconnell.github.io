@@ -1,17 +1,25 @@
 // Typography
 $base-font-size: 18px !default;
 $bold-font-weight: bold !default;
+
 $font-family: 'Quattrocento', 'PT Serif', Georgia, 'Times New Roman', serif !default;
-$line-height: 1.5 !default;
-$heading-font-family: $font-family; 
+/* $heading-font-family: $font-family; */ 
 $title-font-family: 'Special Elite', serif !default;
-$link-font-family: 'Alegreya Sans SC', sans-serif;
+/* $link-font-family: 'Alegreya Sans SC', sans-serif; */
+/* $monospace-font-family: 'Inconsolata', Consolas, monospace !default; */
+/* $subtitle-font-family: $monospace-font-family; */ 
+
+/* $font-family: Palatino, Georgia, 'Times New Roman', serif !default; */
+$heading-font-family: $font-family; 
+/* $title-font-family: 'Courier', 'Courier New', serif !default; */
+$link-font-family: 'Alegreya Sans SC', serif;
+$monospace-font-family: 'Courier New', monospace !default;
+$subtitle-font-family: $monospace-font-family; 
+
+$line-height: 1.5 !default;
 $title-color: royalblue;
 $heading-font-weight: 900 !default;
 $heading-line-height: 1.25 !default;
-//$monospace-font-family: 'Inconsolata', Consolas, monospace !default;
-$monospace-font-family: 'Courier New', Consolas, monospace !default;
-$subtitle-font-family: $monospace-font-family; 
 $h1-title: 2.5rem !default;
 $h1: 1.45rem !default;
 $h2: 1.25rem !default;
@@ -49,7 +57,8 @@ $purple: #f92080 !default;
 $white: #fff !default;
 $box-shadow: #e7eef2 !default;
 //$dark-blue: #00369f !default;
-$dark-blue: #00a4ef  !default;
+//$dark-blue: #00a4ef  !default;
+$dark-blue: cornflowerblue;
 $green: #00ab37 !default;
 $dark-green: #009f06 !default;
 $light-pink: #ffdddd !default;
@@ -125,9 +134,11 @@ $hljs-chunk: $light-gray;
 
 // Header
 $header-border-top: thin solid #f3f3f3;
-$header-color: $dark-gray;
-//$header-color: $dark-blue;
-$header-bg-color: $lighter-gray;
+//$header-color: $dark-gray;
+$header-color: $dark-blue;
+$header-color: $white;
+//$header-bg-color: $lighter-gray;
+$header-bg-color: $dark-blue;
 $header-font-weight: bold;
 
 // Nav

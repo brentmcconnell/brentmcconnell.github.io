@@ -156,7 +156,7 @@ everything about azurepatterns.com but for now I'll have to be content to use
 the UI.
 
 ![Enable HTTPS](/images/2019-06-13-bring-your-own-cert/load-cert.png){:
-.align-left .shadow .outline}
+.shadow .outline}
 The rest is pretty straightforward from the UI.  Find your custom domain and
 select the option to __Configure__ -> __Custom domain HTTPS__ and chose __Use my
 own certificate__.   At this point be prepared to wait 12-16 hours because it
