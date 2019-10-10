@@ -23,7 +23,8 @@ what it takes to get there.
 Migrating an existing non-HyperV VM to Azure.  For this we need to prep the VM
 and install the HyperV modules in the initrd.
 
-## Solution Microsoft provides a good starting point for migrating VMs to Azure
+## Solution 
+Microsoft provides a good starting point for migrating VMs to Azure
 in their documentation with [Create a Linux VM from a custom disk with the Azure
 CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/upload-vhd).
 This document was my starting point but the really
@@ -38,6 +39,13 @@ te-upload-vhd?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json). This page
 covers all the essential steps... mostly (we'll cover the gaps below)... but the
 ordering of the steps is misleading and caused me a few hours so I thought I'd
 rewrite the steps here for anyone who doesn't want to waste their time :smiley:.
+
+__NOTE__: It should also be noted that Oracle Enterprise Linux also
+has the HyperV modules in the distro which means I was able
+to bundle them into my initrd as shown below. In some cases
+you will need to download and install the [Linux Integration
+Services](https://www.microsoft.com/en-us/download/details.aspx?id=55106)
+package from Microsoft to get the modules you need for HyperV.
 
 First, it should be noted that the page assumes you are currently using HyperV
 __which in the VirtualBox case we are not__. This would also apply to VMWare VMs
