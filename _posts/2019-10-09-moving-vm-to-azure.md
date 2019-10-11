@@ -4,9 +4,7 @@ title:  Migrating a non-HyperV VM (aka. VirtualBox) to Azure
 date: 2019-10-09
 summary: |
   In this post we take a look at what it takes to move a VM running in VirtualBox
-  on MacOS to Azure.  I recently came across this situation and since it took a
-  good bit of work to get everything working correctl, I thought I would write it
-  up since I'm sure someone else out there will come across a similar issue.
+  on MacOS, which doesn't use HyperV, to Azure. 
 tags: azure virtualbox oracle linux iaas
 ---
 
