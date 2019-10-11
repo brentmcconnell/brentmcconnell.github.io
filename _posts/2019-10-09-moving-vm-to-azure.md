@@ -40,9 +40,9 @@ covers all the essential steps... mostly (we'll cover the gaps below)... but the
 ordering of the steps is misleading and caused me a few hours so I thought I'd
 rewrite the steps here for anyone who doesn't want to waste their time :smiley:.
 
-__NOTE__: It should also be noted that Oracle Enterprise Linux also
-has the HyperV modules in the distro which means I was able
-to bundle them into my initrd as shown below. In some cases
+__NOTE__: It should also be noted that Oracle Enterprise Linux 
+has the HyperV modules included in the distro which means I was able
+to bundle them into my initrd using the process shown below. In some cases
 you will need to download and install the [Linux Integration
 Services](https://www.microsoft.com/en-us/download/details.aspx?id=55106)
 package from Microsoft to get the modules you need for HyperV.
