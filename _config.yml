@@ -23,11 +23,11 @@ header_pages:
 google_verification:
 # Use either direct GA implementation or set up GTM account
 # - using both will skew your data (leave blank to not use at all)
-google_analytics:
+google_analytics: UA-3151508-5
 google_tag_manager:
 # Bing services
 bing_verification:
-azure_appinsights_key: e0910c52-bfad-4875-843b-6637183abf87
+azure_appinsights_key: 
 
 # Optional features
 animated:             false
