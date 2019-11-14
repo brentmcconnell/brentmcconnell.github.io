@@ -32,8 +32,7 @@ pare-the-vm) section. This lists the most popular distros and how
 to go about preparing for a move to Azure. In my case I was moving
 an Oracle 7.7 VM from VirtualBox so I will cover the basic steps
 I used based on [Prepare an Oracle Linux virtual machine from
-Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/oracle-crea
-te-upload-vhd?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json). This page
+Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/oracle-create-upload-vhd?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json#prerequisites). This page
 covers all the essential steps... mostly (we'll cover the gaps below)... but the
 ordering of the steps is misleading and caused me a few hours so I thought I'd
 rewrite the steps here for anyone who doesn't want to waste their time :smiley:.
