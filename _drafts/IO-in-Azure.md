@@ -11,10 +11,10 @@ tags: azure storage io
 
 I recently had a customer ask several questions about what IOPS and Max
 throughput mean and how they could increase throughput so that their backup
-restore process in Azure would take less time. In this post we'll look at how we
-can estimate our max throughput and IOPS based on VM size and disk configuration.  
-Additionally, we'll also look at ways to improve performance without increasing 
-costs.
+restore process in Azure took less time. They were concerned because the
+workload they had moved to Azure was taking 4 times as long to restore as
+on-prem and they wanted to understand how this could be improved cost
+effectively.
 
 ## Problem
 
