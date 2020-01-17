@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Forwarding Syslog to Azure LogAnalytics
+title:  Forwarding Syslog to Azure Log Analytics
 date: 2020-01-14
 summary: |
  This post looks at Linux Syslog in Azure and how we can forward log messages to
@@ -45,7 +45,7 @@ This can be done using a recent version (2.0.80+) of the Azure CLI with...
 ```terminal
 az monitor log-analytics workspace create \                                                                                                                ✔  10111  14:19:26
     --resource-group example-rg \
-    --workspace-name azurevmlogs2 \
+    --workspace-name azurevmlogs \
     --location usgovvirginia
 ```
 Once you have created a Log Analytics workspace in your Azure subscription you
@@ -121,14 +121,14 @@ machine and install it while also connecting it to the workspace.
 
 So far we've created a Log Analytics workspace and also started capturing some
 basic information about Azure Activity in our workspace.  But we want to go a
-step further and start loading Syslog into Log Analytics so we have a central
+step further and start loading Syslog data into Log Analytics so we have a central
 repository for Linux logs as well as a convenient way to issue queries against
 those logs and send alerts when anomolous behavior occurs.
 
 The nice thing about the omsagent is that it is already configured to push Syslog to Log
 Analytics it's just needs to be told which syslog facilities you want to send.
 If we look at /etc/rsyslog.d/95-omsagent.conf on any of the VMs we configured
-with the agent you'll see an empty file
+with the agent you'll see an empty file.
 
 ```terminal
 >> cat /etc/rsyslog.d/95-omsagent.conf
@@ -139,22 +139,26 @@ with the agent you'll see an empty file
 Again we have options for supplying values to this file. We can either push
 configuration to this file from the Log Analytics workspace or we can configure
 the file locally. In this particular case I'm going to push the configuration
-from the UI. If you navigate to your Log Analytics workspace and select
-__Advanced settings__ in the left navigation you'll be back at the screen we
-viewed previously for information on how to configure the Linux agents manually.
-If we select __Data__ this time you'll have several data sources available to
-choose from for collecting data.
+from the UI. The nice thing about using this option is that the configuration
+will be pushed to all the agents connected to this workspace without you having
+to configure each vm individually. 
+
+If you navigate to your Log Analytics
+workspace and select __Advanced settings__ in the left navigation you'll be back
+at the screen we viewed previously for information on how to configure the Linux
+agents manually. If we select the __Data__ option this time you'll have several
+data sources available to choose from for collecting data.
 
 ![Syslog Configuration](/images/2020-01-14-syslog-loganalytics/syslog.png){:
 .shadow .outline}. 
 
 To push the configuration to your connected Linux agents you will need to enter
-the name of the syslog facilities you want to capture select the __Apply below
-configuration to my machines__ option at the top of the page and select
-__Save__.  Once you saved your configuration you'll need to wait a few minutes
+the name of the syslog facilities you want to capture and select the __Apply below
+configuration to my machines__ option at the top of the page.  __Note: Don't forget to
+select Save once you are done__.  Once you've saved your configuration you'll need to wait a few minutes
 (usually 5-10 minutes is a safe bet)
 for the omsagent to pick up the new configuration and then your Linux logs will
-start being pushed to Log Analytics.
+start being pushed to Log Analytics.  
 
 ### Query Syslog
 Now that we have our Syslog in Log Analytics we can setup alerts on those logs
@@ -164,23 +168,23 @@ messages and also any "notice" level messages that have FAILED in the
 SyslogMessage field.
 
 ![Login Errors](/images/2020-01-14-syslog-loganalytics/login-errors.png){:
-.shadow .outline}. 
+.shadow .outline} 
 
-Awesome!  We now are seeing odd login behavior being reported to Syslog from our
-Linux VMs but let's assume we don't want to run this query manually in order to
+And that's it!  We now are seeing any odd login behavior being reported to Syslog from our
+Linux VMs.  But let's assume we don't want to run this query manually in order to
 determine if we have problematic behavior going on.  We can setup a __Alert__
 using this query so that whenever Syslog messages are consumed by Log Analytics
-if we detect any returned values for this query we can send an alert.  By
+if it detects any returned values for this query we can send an alert.  By
 selecting __New alert rule__ at the top of the results page we can setup a rule
 for this query.
+
+![Alert](/images/2020-01-14-syslog-loganalytics/alert.png){:
+.shadow .outline}. 
 
 Now all we have to do is fill in the information for the alert and we will have
 automatic detection and alerts for any unusual user behavior that matches the
 query we just executed and this will continue to run as Syslog logs are ingested
 into Log Analytics.
-
-![Alert](/images/2020-01-14-syslog-loganalytics/alert.png){:
-.shadow .outline}. 
 
 ### Conclusion
 So hopefully this was helpful and you see just how easy it is for Log
