@@ -67,7 +67,7 @@ following table highlights the type of data that will be collected.
 ![Activity Log Events](/images/2020-01-14-syslog-loganalytics/activity-log.png){:
 .shadow .outline}. 
 
-We can start the collection process by selecing the __Azure Activity log__
+We can start the collection process by selecting the __Azure Activity log__
 option in the left menu of your Log Analytics workspace.  Select the appropriate
 subscription you want to start collection on and choose the __Connect__ option.
 That's it.  You are now streaming data into Log Analytics!  If you perform some
