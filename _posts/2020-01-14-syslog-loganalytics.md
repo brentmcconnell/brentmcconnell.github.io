@@ -160,6 +160,20 @@ select Save once you are done__.  Once you've saved your configuration you'll ne
 for the omsagent to pick up the new configuration and then your Linux logs will
 start being pushed to Log Analytics.  
 
+After the configuration defined in the portal is picked up by the omsagent
+you'll now have values defined in your /etc/rsyslog.d/95-omsagent.conf file.
+
+```terminal
+
+>> cat /etc/rsyslog.d/95-omsagent.conf
+# OMS Syslog collection for workspace 3cf08a73-b0de-4b4b-a35d-2a2b183aa147
+auth.=alert;auth.=crit;auth.=emerg;auth.=err;auth.=info;auth.=notice;auth.=warning	@127.0.0.1:25225
+authpriv.=alert;authpriv.=crit;authpriv.=emerg;authpriv.=err;authpriv.=info;authpriv.=notice;authpriv.=warning	@127.0.0.1:25225
+kern.=alert;kern.=crit;kern.=emerg;kern.=err;kern.=info;kern.=notice;kern.=warning	@127.0.0.1:25225
+syslog.=alert;syslog.=crit;syslog.=emerg;syslog.=err;syslog.=info;syslog.=notice;syslog.=warning	@127.0.0.1:25225
+
+```
+
 ### Query Syslog
 Now that we have our Syslog in Log Analytics we can setup alerts on those logs
 so that we can detect anomalous behavior.  Let's start with a query that looks
