@@ -2,7 +2,8 @@
 $base-font-size: 18px !default;
 $bold-font-weight: bold !default;
 
-$font-family: 'Quattrocento', 'PT Serif', Georgia, 'Times New Roman', serif !default;
+//$font-family: 'Bitter','Quattrocento', 'PT Serif', Georgia, 'Times New Roman', serif !default;
+$font-family: Bitter, "Apple SD Gothic Neo", AppleGothic, NanumBarunGothic, "Malgun Gothic", Dotum, sans-serif;
 /* $heading-font-family: $font-family; */ 
 $title-font-family: 'Special Elite', serif !default;
 /* $link-font-family: 'Alegreya Sans SC', sans-serif; */
@@ -18,7 +19,8 @@ $subtitle-font-family: $monospace-font-family;
 
 $line-height: 1.5 !default;
 $title-color: royalblue;
-$heading-font-weight: 900 !default;
+$heading-font-weight: normal !default;
+//$heading-font-weight: 900 !default;
 $heading-line-height: 1.25 !default;
 $h1-title: 2.5rem !default;
 $h1: 1.45rem !default;
@@ -139,7 +141,7 @@ $header-color: $dark-blue;
 $header-color: $white;
 //$header-bg-color: $lighter-gray;
 $header-bg-color: $dark-blue;
-$header-font-weight: bold;
+$header-font-weight: normal;
 
 // Nav
 $nav-color: $mid-gray;
