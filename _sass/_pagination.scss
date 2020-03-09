@@ -51,3 +51,8 @@
   cursor: not-allowed;
   background-color: #999;
 }
+
+.pagination .active-page {
+    border: 2px solid lightskyblue;
+    background: #ececec;
+}
