@@ -7,7 +7,7 @@ summary: |
  and some timely entries at our DNS registrar
 tags: cdn certificate cert ssl
 ---
-In this episode of Imperfect Today we're going to create our own certificate
+In this post we're going to create our own certificate
 using Let's Encrypt that we'll eventually use with an Azure CDN instead of using
 the certificates that are provided for free. Now why would anyone do that?  I'm
 sure there are some reasons I just can't think of any at the moment ;).
