@@ -25,7 +25,7 @@
    <h3 class="category-topic">Topics/</h3>
     {% assign sortedCategories = site.categories | sort %}
     {% for category in sortedCategories %}
-      <a class="sidebar-nav-item" href="{{site.baseurl}}/category/{{category[0] | remove: ' ' }}">{{ category[0] }}</a>
+      <a class="sidebar-nav-item" href="{{site.baseurl}}/category/{{category[0] | remove: ' ' | downcase }}">{{ category[0] }}</a>
     {% endfor %}
   </nav>
 
