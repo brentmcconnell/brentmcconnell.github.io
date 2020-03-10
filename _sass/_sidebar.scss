@@ -26,6 +26,7 @@
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
   background-color: #202020;
+  padding-top: $space-2;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
@@ -33,6 +34,13 @@
   .sidebar {
     font-size: .75rem; /* 14px */
   }
+}
+
+.sidebar .category-topic {
+    padding-left:10px;
+    text-transform: uppercase;
+    font-size:$h4;
+    padding-top: $space-1;
 }
 
 /* Sidebar content */
@@ -90,11 +98,12 @@ a.sidebar-nav-item:focus {
   top:  .5rem;
   left: .5rem;
   display: block;
-  padding: .1rem .5rem;
+  padding: .3rem .25em;
   color: #505050;
   background-color: #fff;
   border-radius: .25rem;
   cursor: pointer;
+  line-height: 1px;
 }
 
 .sidebar-toggle:before {

@@ -4,13 +4,9 @@
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
-<!--
-  <div class="sidebar-item">
-    <p>{{ site.description }}</p>
-  </div>
--->
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+   <h3 class="category-topic">Pages/</h3>
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Posts</a>
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
@@ -26,6 +22,7 @@
       {% endif %}
     {% endfor %}
 
+   <h3 class="category-topic">Topics/</h3>
     {% assign sortedCategories = site.categories | sort %}
     {% for category in sortedCategories %}
       <a class="sidebar-nav-item" href="{{site.baseurl}}/category/{{category[0] | remove: ' ' }}">{{ category[0] }}</a>
