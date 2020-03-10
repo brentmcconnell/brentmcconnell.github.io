@@ -7,7 +7,7 @@ permalink: /2010/01/addendum-to-brooks-law/
 the_sub_subtitle:
   - Impact of Management Overhead
 categories:
-  - Getting Things Done
+  - Productivity 
 tags: productivity
 summary: |
  Are all communication nodes equal in Brook's theory or intercommunication on a project?

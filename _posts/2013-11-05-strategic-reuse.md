@@ -6,10 +6,7 @@ layout: post
 permalink: /2013/11/strategic-reuse/
 categories:
   - Collaboration
-  - Featured Posts
-  - Look What I Found
-  - Technology Adoption
-  - Things I Learned Today
+  - Tech Tips
 tags: collaboration knowledge reuse
 excerpt_separator: <!--more-->
 summary: |

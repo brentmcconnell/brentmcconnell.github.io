@@ -7,7 +7,7 @@ permalink: /2013/08/building-a-better-mousetrap/
 the_sub_subtitle:
   - Innovation vs Quality
 categories:
-  - Technology Adoption
+  - Community 
 tags: knowledge reuse
 excerpt_separator: <!--more-->
 ---

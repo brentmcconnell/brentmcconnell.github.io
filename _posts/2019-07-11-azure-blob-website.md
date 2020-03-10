@@ -3,9 +3,10 @@ layout: post
 title: Azure Storage for Your Website
 date: 2019-07-11
 summary: |
- Part 1 of a series to setup an Azure storage account to host a static
- website
+ Part 1 of a series to setup an Azure storage account to host a static website
 tags: azure storage website
+categories:
+  - Azure
 ---
 Use Azure Storage and Verizon CDN to create a custom website using your own 
 domain name for a few cents a month.  In this article we will also look at how to setup

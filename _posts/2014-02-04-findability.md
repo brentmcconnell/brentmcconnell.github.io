@@ -9,7 +9,6 @@ the_sub_subtitle:
 categories:
   - Collaboration
   - Community
-  - Getting Things Done
 tags: knowledge reuse oss
 excerpt_separator: <!--more-->
 summary: |
