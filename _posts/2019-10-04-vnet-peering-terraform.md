@@ -6,6 +6,8 @@ summary: |
  This post takes a look at setting up a Hub and Spoke network topology in Azure
  using VNet Peering and Terraform
 tags: azure terraform vnet networking
+categories:
+  - Azure
 ---
 In this post we'll take a look at using Terraform to setup an Azure environment
 that implements a Hub and Spoke network topology using Linux as a Virtual

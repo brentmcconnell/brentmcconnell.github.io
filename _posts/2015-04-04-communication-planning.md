@@ -8,7 +8,6 @@ the_sub_subtitle:
   - "The more they know, the more they'll understand"
 categories:
   - Community
-  - Featured Posts
   - Open Source
 excerpt_separator: <!--more-->
 summary: |

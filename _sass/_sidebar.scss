@@ -22,7 +22,7 @@
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: $font-family; 
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
   background-color: #202020;
@@ -38,6 +38,7 @@
 /* Sidebar content */
 .sidebar a {
   font-weight: normal;
+  text-shadow: none;
   color: #fff;
 }
 .sidebar-item {
@@ -86,10 +87,10 @@ a.sidebar-nav-item:focus {
 /* Style the `label` that we use to target the `.sidebar-checkbox` */
 .sidebar-toggle {
   position: absolute;
-  top:  .8rem;
-  left: 1rem;
+  top:  .5rem;
+  left: .5rem;
   display: block;
-  padding: .25rem .75rem;
+  padding: .1rem .5rem;
   color: #505050;
   background-color: #fff;
   border-radius: .25rem;

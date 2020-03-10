@@ -7,8 +7,10 @@ permalink: /2009/05/flock-theory-and-its-implications/
 categories:
   - Collaboration
   - Community
-  - Technology Adoption
+  - Tech Tips
 tags: community leadership
+summary: |
+ Are there things communities can learn from bird flocks?  It would seem there are some very cool patterns in flocks that can teach us much about leadership.
 ---
 I have to admit that I’m a bit of a collaboration and community junkie and as such follow some obscure topics. One topic I’ve had on my radar for quite some time is Flock Theory. Flock theory tries to describe the self-organizing and emergent aspects of human behavior. Succinctly put, behavior in some cases is not a property of any individual person (or bird), but rather emerges as a property of a group or social network (flock). This concept can be used to describe aspects of both collaborative teams and open source communities. I'm not going to analyze the merits of the theory but I do want to introduce its concepts which I think have implications for team/community productivity and possibility even individual information relevance.
 

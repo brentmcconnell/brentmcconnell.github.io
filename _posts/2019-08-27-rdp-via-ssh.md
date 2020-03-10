@@ -5,6 +5,8 @@ summary: |
  In this post we'll look at what it takes to connect to an Azure DevTest Lab
  using RDP via an SSH tunnel when you only have outbound access to port 443
 tags: azure ssh linux devtest tunnel rdp
+categories:
+  - Azure
 ---
 In this post we'll take a look at what it takes to connect to an Azure DevTest
 Lab when you only have outbound access to connect to resources on port 443. I

@@ -5,7 +5,7 @@ author: Brent McConnell
 layout: post
 permalink: /2010/03/what-communities-are-not/
 categories:
-  - Looking For Something?
+  - Community 
 tags: community
 excerpt_separator: <!--more-->
 summary: |

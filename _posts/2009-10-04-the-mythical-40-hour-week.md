@@ -5,8 +5,8 @@ author: Brent McConnell
 layout: post
 permalink: /2009/10/the-mythical-40-hour-week/
 categories:
-  - Getting Things Done
-  - Technology Adoption
+  - Productivity
+  - Tech Tips
 tags: productivity
 excerpt_separator: <!--more-->
 summary: |

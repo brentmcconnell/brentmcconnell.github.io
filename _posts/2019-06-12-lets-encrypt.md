@@ -6,6 +6,8 @@ summary: |
  Let's Encrypt a certificate for our website using the command line
  and some timely entries at our DNS registrar
 tags: cdn certificate cert ssl
+categories:
+  - Azure
 ---
 In this post we're going to create our own certificate
 using Let's Encrypt that we'll eventually use with an Azure CDN instead of using

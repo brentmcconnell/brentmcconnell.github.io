@@ -5,7 +5,7 @@ author: Brent McConnell
 layout: post
 permalink: /2009/09/get-your-productivity-groove-on/
 categories:
-  - Getting Things Done
+  - Productivity 
 tags: productivity
 summary: |
  Multitasking is one of the biggest lies today.  With all the things battling for our attention let's look at what it means to try to multitask in our daily lives.

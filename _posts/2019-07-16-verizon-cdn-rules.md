@@ -6,6 +6,8 @@ summary: |
  Part 2 of a post series that sets up some redirect rules using the
  Verizon Premium CDN
 tags: website cdn
+categories:
+  - Azure
 ---
 In [Part 1]({% post_url 2019-07-11-azure-blob-website %}) of this post we setup
 a website using an Azure Storage Acct and configured the Verizon Premium CDN 

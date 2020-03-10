@@ -7,14 +7,16 @@ summary: |
  Communities exist because of the need people have to belong.  In this post we look at some of the reasons open source communities develop and thrive.
 tags: community collaboration oss
 excerpt_separator: <!--more-->
+categories:
+  - Community
+  - Open Source
 ---
 
 <em>“…success comes entirely from people and the system within which they work. Results are not the point. Developing the people and the system so that together they are capable of achieving successful results is the point.”</em>
 
-[Leading Lean Software Development](ihttps://www.amazon.com/exec/obidos/ASIN/0321620704/poppendieckco-20)
+[Leading Lean Software Development](https://www.amazon.com/exec/obidos/ASIN/0321620704/poppendieckco-20)
 
-Recently, that quote stirred some controversy among my peers. The part about “results are not the point” was hard for some people to understand and come to grips with. Aren’t results always the point? Well, as with most things, “It depends”. The people and community that evolve around an open source software project will ultimately determine its success. Even if the core team launches the project with spectacular productivity and results, this phase of evolution will be fleeting if the necessary processes and community to make the project a long lasting success are not put into place.
-<!--more-->
+Recently, that quote stirred some controversy among my peers. The part about “results are not the point” was hard for some people to understand and come to grips with. Aren’t results always the point?  Well, as with most things, “It depends”. <!--more-->The people and community that evolve around an open source software project will ultimately determine its success. Even if the core team launches the project with spectacular productivity and results, this phase of evolution will be fleeting if the necessary processes and community to make the project a long lasting success are not put into place.
 
 This article presents some of the actions open source community leaders can take to ensure not only results, but a system that encourages productivity and longevity.
 

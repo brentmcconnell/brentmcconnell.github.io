@@ -6,6 +6,9 @@ summary: |
  This post looks at Linux Syslog in Azure and how we can forward log messages to
  Azure Log Analytics.
 tags: linux loganalytics 
+categories:
+  - Azure
+  - Tech Tips
 ---
 
 I was recently tasked with coming up with a solution that enabled several
