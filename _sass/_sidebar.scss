@@ -32,7 +32,7 @@
 }
 @media (min-width: 30em) {
   .sidebar {
-    font-size: .75rem; /* 14px */
+    font-size: 1rem; /* 14px */
   }
 }
 
@@ -71,6 +71,7 @@ a.sidebar-nav-item:focus {
   text-decoration: none;
   background-color: rgba(255,255,255,.1);
   border-color: transparent;
+  background-image: none !important;
 }
 
 @media (min-width: 48em) {
