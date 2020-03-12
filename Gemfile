@@ -7,4 +7,5 @@ group :jekyll_plugins do
     gem 'github-pages'
     gem 'jekyll-paginate'
     gem 'jemoji'
+    gem 'rouge'
 end

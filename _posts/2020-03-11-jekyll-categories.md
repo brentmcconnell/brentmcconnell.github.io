@@ -32,12 +32,11 @@ running.
 To setup some basic categories I started by creating a new layout in the __\_layouts__ 
 directory in a file called __category.html__ based off the default template.
 
-{%raw%}
-```html
+{% highlight html linenos %}
+{% raw %}
 ---
 layout: default
 ---
-
 <div class="categories">
     <h1 class="h1 category-title">
       Topic:&nbsp;{{ page.category-name }}/
@@ -61,11 +60,10 @@ layout: default
               {{ post.excerpt }}
           </span>
         </div>
-      
     </div>
 </div>
-```
-{%endraw%}
+{% endraw %}
+{% endhighlight %}
 
 You'll notice in this template that I'm using the __site__ and __page__
 variables to construct the page. site.categories[] is the list of posts
@@ -79,15 +77,13 @@ category page that defines some Front Matter to connect a category to the
 template above.  For instance, I have a category called "Azure" so I'll need to
 create a file called azure.html with the following content
 
-{%raw%}
-```html
+{% highlight html linenos %}
 ---
 layout: category
 category-name: Azure
 permalink: "/category/azure"
 ---
-```
-{%endraw%}
+{%endhighlight%}
 
 And that's all that you'll need in each of your category pages.  The category.html layout
 will use the __category-name__ defined in the front matter to build each category
@@ -98,8 +94,8 @@ Once you have your category pages created you'll need an easy way to navigate to
 each category.  I used the following in my sidebar to list all the categories on
 my site.  
 
-{%raw%}
-```html
+{% highlight html linenos %}
+{% raw %}
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
 <div class="sidebar" id="sidebar">
@@ -115,8 +111,8 @@ my site.
   </nav>
 
 </div>
-```
-{%endraw%}
+{% endraw %}
+{% endhighlight %}
 
 __NOTE:__ Notice that I remove spaces and lowercase the categories in the
 template above. This is a pretty important point. The categories that are used
@@ -127,8 +123,7 @@ that the __permalink__ matches as well.
 ## Summary
 Here is an example of a post Front Matter used on this site.  
 
-{%raw%}
-```html
+{% highlight html linenos %}
 ---
 layout: post
 title:  IO Performance in Azure Explained
@@ -142,8 +137,8 @@ categories:
   - Azure
   - Tech Tips
 ---
-```
-{%endraw%}
+{% endhighlight %}
+
 Notice that I have defined two categories for this post, __Azure__ and __Tech
 Tips__. As long as I have two category pages defined with the correct Front
 Matter this post will display under each of those category pages.
@@ -152,15 +147,15 @@ The category page for Azure is listed above and called __azure.html__ in my jeky
 site.  For Tech Tips I use a file called __technology.html__ that contains the
 following Front Matter.  
 
-{%raw%}
-```html
+{% highlight html linenos %}
+{% raw %}
 ---
 layout: category 
 category-name: Tech Tips 
 permalink: "/category/techtips"
 ---
-```
-{%endraw%}
+{% endraw %}
+{% endhighlight %}
 
 Note that the permalink address must match the characters in the category-name.
 Remember from above we take the category-name and remove any spaces and then

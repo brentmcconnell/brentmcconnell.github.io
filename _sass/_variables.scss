@@ -3,18 +3,18 @@ $base-font-size: 18px !default;
 $bold-font-weight: bold !default;
 
 //$font-family: 'Bitter','Quattrocento', 'PT Serif', Georgia, 'Times New Roman', serif !default;
-$font-family: Bitter, "Apple SD Gothic Neo", AppleGothic, NanumBarunGothic, "Malgun Gothic", Dotum, sans-serif;
+$font-family: Bitter, Dotum, sans-serif;
 /* $heading-font-family: $font-family; */ 
 $title-font-family: 'Special Elite', serif !default;
 /* $link-font-family: 'Alegreya Sans SC', sans-serif; */
-/* $monospace-font-family: 'Inconsolata', Consolas, monospace !default; */
+$monospace-font-family: 'Ubuntu Mono', monospace !default;
 /* $subtitle-font-family: $monospace-font-family; */ 
 
 /* $font-family: Palatino, Georgia, 'Times New Roman', serif !default; */
 $heading-font-family: $font-family; 
 /* $title-font-family: 'Courier', 'Courier New', serif !default; */
 $link-font-family: 'Alegreya Sans SC', serif;
-$monospace-font-family: 'Courier New', monospace !default;
+//$monospace-font-family: 'Courier New', monospace !default;
 $subtitle-font-family: $monospace-font-family; 
 
 $line-height: 1.5 !default;
@@ -162,3 +162,29 @@ $footer-font-size: .75rem;
 
 // Random
 $terminal-window-height: 30px;
+
+//Highlight Theme
+$code-font-size         : 0.75rem;
+$line-height-code-block : 1.6;
+$code-font-family       : $monospace-font-family; 
+$code-foreground        : red;
+$code-background        : yellow;
+$code-border-radius     : 3px;
+$highlight-background   : #f7f7f7 !global;
+$highlight-current-line : #efefef !global;
+$highlight-selection    : #d6d6d6 !global;
+$highlight-foreground   : #4d4d4c !global;
+$highlight-comment      : #8e908c !global;
+$highlight-red          : #c82829 !global;
+$highlight-orange       : #f5871f !global;
+$highlight-yellow       : #eab700 !global;
+$highlight-green        : #718c00 !global;
+$highlight-aqua         : #3e999f !global;
+$highlight-blue         : #4271ae !global;
+$highlight-purple       : #8959a8 !global;
+$highlight-deletion     : #fdd !global;
+$highlight-addition     : #dfd !global;
+$highlight-gutter       : (
+    color: #869194,
+    bg-color: #eff2f3
+) !global;
