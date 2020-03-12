@@ -149,7 +149,7 @@ Matter this post will display under each of those category pages.
 
 The category page for Azure is listed above and called __azure.html__ in my jekyll
 site.  For Tech Tips I use a file called __technology.html__ that contains the
-following Front Matter.  Note that the permalink address matches the category-name.
+following Front Matter.  
 
 {%raw%}
 ```html
@@ -161,6 +161,8 @@ permalink: "/category/techtips"
 ```
 {%endraw%}
 
-
+Note that the permalink address must match the characters of the category-name.
+Remember from above we take the category-name and remove any spaces and then
+lowercase it when we contstruct the link to our category pages.
 
 
