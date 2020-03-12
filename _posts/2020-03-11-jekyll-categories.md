@@ -107,9 +107,10 @@ my site.
    <h3 class="category-topic">Topics/</h3>
     {% assign sortedCategories = site.categories | sort %}
     {% for category in sortedCategories %}
-      <a class="sidebar-nav-item" href="{{site.baseurl}}/category/{{category[0] | remove: ' ' | downcase }}">
-        {{ category[0] }}
-      </a>
+     {% assign cat4url = category[0] | remove:' ' | downcase %}
+     <a class="sidebar-nav-item" href="{{site.baseurl}}/category/{{cat4url}}">
+        {{category[0]}}
+     </a>
     {% endfor %}
   </nav>
 
@@ -161,7 +162,7 @@ permalink: "/category/techtips"
 ```
 {%endraw%}
 
-Note that the permalink address must match the characters of the category-name.
+Note that the permalink address must match the characters in the category-name.
 Remember from above we take the category-name and remove any spaces and then
 lowercase it when we contstruct the link to our category pages.
 
