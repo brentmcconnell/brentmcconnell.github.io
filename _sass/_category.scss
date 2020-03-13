@@ -16,7 +16,7 @@
 
 .category-item {
     font-family: $link-font-family;
-    margin: 0px 5px;
+    margin: 0 5px 0 0;
     padding: 3px 10px;
     border: 1px solid #dcdcdc;
     border-radius: 3px;
@@ -28,6 +28,7 @@
 
 .post-categories {
     margin-bottom: 10px;
+    float:left;
 }
 
 .post-categories a {

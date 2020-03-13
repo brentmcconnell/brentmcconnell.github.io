@@ -86,7 +86,14 @@ a:active {
   font-family: $link-font-family;
 }
 
+.page-minutes-top {
+    float: right;
+    margin-right:1.35rem;
+}
 
+.page-minutes-bottom {
+    display:none;
+}
 
 .post-meta-container {
   float: left;

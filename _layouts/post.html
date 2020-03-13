@@ -24,31 +24,34 @@ layout: default
 <div class="clearfix bottom-border"></div>
 <div class="post-header mb1">
   <h1>{{ page.title }}</h1>
-  {% assign cat-num = 0 %}
-  {% for category in page.categories %}
-    {% assign cat-num = cat-num | plus: 1 %} 
-  {% endfor %}
     {% if site.show_categories  %}
   <div class="post-categories">
-    {% if cat-num == 1 %}
-        <span class="category-label">{{ site.text.category.label }}:</span>
-    {% else %}
-        <span class="category-label">{{ site.text.category.label-multi }}:</span>
+        <div class="category-block">
+        {% for category in page.categories %}
+            {% assign cat4url = category | remove:' ' | downcase %}
+            <a href="{{site.baseurl}}/category/{{cat4url}}">
+                <span class="category-item">{{ category }}</span>
+            </a>
+        {% endfor %}
+        </div>
+  </div>
+  <div class="page-minutes-top post-meta small">
+    {% if site.show_page_minutes %}
+        {% if page.minutes %}
+          {{ page.minutes }} {{ site.text.post.minute_read | default: "minute read" }}
+        {% else %}
+          {{ minutes }} {{ site.text.post.minute_read | default: "minute read" }}
+        {% endif %}
     {% endif %}
-    {% for category in page.categories %}
-        {% assign cat4url = category | remove:' ' | downcase %}
-        <a href="{{site.baseurl}}/category/{{cat4url}}">
-            <span class="category-item">{{ category }}</span>
-        </a>
-    {% endfor %}
   </div>
   {% endif %}
+  <div class="clearfix"></div>
   <div class="post-meta-container">
     {{ page.date | date: site.date_format }}
     {% if page.update_date %}
     <div class="post-meta">{{ site.text.post.updated | default: "Updated" }}: {{ page.update_date | date: site.date_format }}</div>
     {% endif %}
-    <div class="post-meta small">
+    <div class="page-minutes-bottom post-meta small">
     {% if site.show_page_minutes %}
         {% if page.minutes %}
           {{ page.minutes }} {{ site.text.post.minute_read | default: "minute read" }}
