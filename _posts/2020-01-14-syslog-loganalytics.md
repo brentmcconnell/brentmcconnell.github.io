@@ -9,6 +9,7 @@ tags: linux loganalytics
 categories:
   - Azure
   - Tech Tips
+  - Linux
 ---
 
 I was recently tasked with coming up with a solution that enabled several

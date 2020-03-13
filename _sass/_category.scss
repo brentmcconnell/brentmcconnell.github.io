@@ -7,3 +7,38 @@
     margin-top: $space-1;
     //font-family: $link-font-family;
 }
+
+.category-label {
+    font-family: $link-font-family;
+    color: $mid-gray;
+    margin-right: 10px;
+}
+
+.category-item {
+    font-family: $link-font-family;
+    margin: 0px 5px;
+    padding: 3px 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    background-color: $category-color;
+    //background-color: $dark-blue;
+    color: $white;
+    font-weight: bold;
+    border: 0;
+}
+
+.post-categories {
+    margin-bottom: 10px;
+}
+
+.post-categories a {
+    text-shadow: none;
+}
+
+.post-categories a:hover, a:focus, a:active {
+    background-image: none;
+}
+
+.post-categories span:hover, span:focus, span:active {
+    background-color: $category-hover-color;
+}
