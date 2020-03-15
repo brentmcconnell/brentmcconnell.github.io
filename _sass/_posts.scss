@@ -49,13 +49,19 @@ a:active {
   padding-bottom: 0;
 }
 
+.posts .post-title {
+    font-family: $font-family !important;
+    font-size: 1.45rem !important;
+    color: #333;
+}
+
 .post-link .post-title {
   margin-top: 0;
   font-size: 1.15rem;
   font-weight: normal;
-  font-family: "Alegreya Sans SC",serif !important;
+  font-family:$link-font-family;
   //color: #333;
-}
+} 
 
 .post-header {
     //border-top: 2px solid #eee;
