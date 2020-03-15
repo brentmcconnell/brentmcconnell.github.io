@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Migrating a non-HyperV VM (aka. VirtualBox) to Azure
+title:  Migrating a non-HyperV VM to Azure
 date: 2019-10-09
 summary: |
   In this post we take a look at what it takes to move a VM running in VirtualBox
