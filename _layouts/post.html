@@ -35,35 +35,34 @@ layout: default
         {% endfor %}
         </div>
   </div>
-  <div class="page-minutes-top post-meta small">
-    {% if site.show_page_minutes %}
-        {% if page.minutes %}
-          {{ page.minutes }} {{ site.text.post.minute_read | default: "minute read" }}
-        {% else %}
-          {{ minutes }} {{ site.text.post.minute_read | default: "minute read" }}
-        {% endif %}
-    {% endif %}
-  </div>
+  <div class="upper-share">
+      {% if site.show_sharing_icons %}
+        {% include share_buttons.html %}
+      {% endif %}
   {% endif %}
+  </div>
   <div class="clearfix"></div>
   <div class="post-meta-container">
     {{ page.date | date: site.date_format }}
     {% if page.update_date %}
     <div class="post-meta">{{ site.text.post.updated | default: "Updated" }}: {{ page.update_date | date: site.date_format }}</div>
     {% endif %}
-    <div class="page-minutes-bottom post-meta small">
-    {% if site.show_page_minutes %}
-        {% if page.minutes %}
-          {{ page.minutes }} {{ site.text.post.minute_read | default: "minute read" }}
-        {% else %}
-          {{ minutes }} {{ site.text.post.minute_read | default: "minute read" }}
-        {% endif %}
-    {% endif %}
-    </div>
   </div>
-  {% if site.show_sharing_icons %}
-    {% include share_buttons.html %}
+  <div class="page-minutes post-meta">
+  {% if site.show_page_minutes %}
+    {% if page.minutes %}
+      {{ page.minutes }} {{ site.text.post.minute_read | default: "minute read" }}
+    {% else %}
+      {{ minutes }} {{ site.text.post.minute_read | default: "minute read" }}
+    {% endif %}
   {% endif %}
+  </div>
+<div class="clearfix"></div>
+  <div class="lower-share">
+      {% if site.show_sharing_icons %}
+        {% include share_buttons.html %}
+      {% endif %}
+  </div>
 <div class="clearfix"></div>
 </div>
 <article class="post-content">

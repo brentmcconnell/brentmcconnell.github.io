@@ -55,22 +55,22 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username: brentmcconnell
-reddit_username:
-bitbucket_username: emcconne
-stackoverflow_id:
-twitter_username: emcconne
-skype_username: emcconne
-steam_nickname:
-google_plus_id:
-linkedin_username: ebmcconnell
-angellist_username:
-medium_id:
-bitcoin_url:
-paypal_url:
-flattr_button:
-telegram_username:
-vk_id:
+github_username         : brentmcconnell
+reddit_username         :
+bitbucket_username      :
+stackoverflow_id        :
+twitter_username        : emcconne
+skype_username          :
+steam_nickname          :
+google_plus_id          :
+linkedin_username       : ebmcconnell
+angellist_username      :
+medium_id               :
+bitcoin_url             :
+paypal_url              :
+flattr_button           :
+telegram_username       :
+vk_id                   :
 
 # Show next and home buttons at the top of posts
 show_page_navigation: true

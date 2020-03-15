@@ -4,6 +4,19 @@
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
+    <figure class="author-image">
+        <a class="img" href="{{ site.baseurl }}/about" style="background-image: url(/images/site/brent2.png)">
+            <span class="hidden">
+                {{site.author}}'s Picture
+            </span>
+        </a>
+    </figure>
+    <section class="author">
+        <div class="social-links">
+            {% include social_links.html %}
+        </div>
+    </section>
+   
   <nav class="sidebar-nav">
    <h3 class="category-topic">Pages/</h3>
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Posts</a>
@@ -26,7 +39,7 @@
     {% assign sortedCategories = site.categories | sort %}
     {% for category in sortedCategories %}
      {% assign cat4url = category[0] | remove:' ' | downcase %}
-     <a class="sidebar-nav-item" href="{{site.baseurl}}/category/{{cat4url}}">{{category[0]}}</a>
+     <a class="sidebar-nav-item" href="{{site.baseurl}}/category/{{cat4url}}">{{ category[0] }}</a>
     {% endfor %}
   </nav>
 

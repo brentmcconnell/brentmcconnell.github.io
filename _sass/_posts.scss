@@ -60,6 +60,11 @@ a:active {
     margin-top: 5px;
 }
 
+.post-header h1 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+}
+
 .post-footer {
 //  @extend .italic;
   position: relative;
@@ -86,13 +91,13 @@ a:active {
   font-family: $link-font-family;
 }
 
-.page-minutes-top {
-    float: right;
-    margin-right:1.35rem;
+.lower-share {
+    display:none;
 }
 
-.page-minutes-bottom {
-    display:none;
+.page-minutes {
+    float:right;
+    margin-right:25px;
 }
 
 .post-meta-container {

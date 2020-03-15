@@ -18,8 +18,8 @@
       <div class="post ml2">
         <a href="{{ post.url | relative_url }}" class="post-link">
           <h4 class="post-title">{{ post.title }}</h4>
-          <p class="post-summary">{{ post.summary }}</p>
         </a>
+        <p class="post-summary">{{ post.summary }}</p>
       </div>
       {% assign max_related_counter = max_related_counter | plus: 1 %}
       {% if max_related_counter >= max_related %}
