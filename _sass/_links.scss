@@ -9,12 +9,23 @@ a {
   text-shadow: white 1px 0px 0px, white -1px 0px 0px;
 }
 
+.page-navigation
+a:hover,
+a:focus,
+a:active {
+  background-image: none 
+}
+
+.post a {
+    color: $link-color;
+}
+
 a:hover,
 a:focus,
 a:active {
   border: 0;
   color: $link-hover-color;
-  opacity: 0.65;
+  opacity: 0.75;
   text-decoration: none;
    background-image: linear-gradient(to top,
      rgba(0,0,0,0) 13%,

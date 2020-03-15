@@ -51,8 +51,10 @@ a:active {
 
 .post-link .post-title {
   margin-top: 0;
+  font-size: 1.15rem;
   font-weight: normal;
-  color: #333;
+  font-family: "Alegreya Sans SC",serif !important;
+  //color: #333;
 }
 
 .post-header {
@@ -62,7 +64,7 @@ a:active {
 
 .post-header h1 {
     border-bottom: 2px solid #eee;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .post-footer {
@@ -85,7 +87,7 @@ a:active {
   width: auto;
   font-weight: 300;
   margin: 0;
-  padding: .25em 0;
+  //padding: .25em 0;
   color: #7a7a7a;
   //font-style: italic;
   font-family: $link-font-family;
