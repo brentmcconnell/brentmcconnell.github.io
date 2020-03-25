@@ -12,11 +12,13 @@ categories:
   - Kubernetes
 ---
 
-In a recent project I was asked to configure an ingress controller so that host
-names specified in ingress objects would automatically create DNS records.
-This is exactly what the ExternalDNS project does. Unfortuately, even though
-there is a section for configuring it on Azure, it wasn't straightforward. This post walks
-through getting it up and running and also demonstrates its usage in Azure Government.
+In a recent project I was asked to configure Kubernetes so that it could create
+and manage DNS records automatically. This automatic management comes through
+Ingress objects created in Kubernetes. Hostnames specified in ingress objects 
+automatically create DNS records. This is exactly what the ExternalDNS project
+does. Unfortuately, even though there is a section for configuring it on Azure,
+it wasn't straightforward. This post walks through getting it up and running and
+also demonstrates its usage in Azure Government.
 
 ## Problem
 
