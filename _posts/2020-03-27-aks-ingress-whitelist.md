@@ -98,7 +98,7 @@ The global option can be set using a ConfigMap that overrides the default vaules
 In order to use __whitelist-source-range__ NGINX will need access to the
 external IP of incoming requests.  Typically NGINX would see the NAT'd
 Kubernetes address but because we want to limit which external IPs have access
-we'll need NGINX to have access to the requests source IP.  This can be done by
+we'll need NGINX to have access to the request's source IP.  This can be done by
 setting __controller.service.externalTrafficPolicy=Local__ on the NGINX
 controller.
 
