@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automate DNS Records with ExternalDNS on AKS
+title: Automate DNS and SSL Certificates on AKS
 date: 2020-03-17
 summary: |
  Let's look at what it takes to install and configure a external-dns on AKS and
