@@ -131,7 +131,7 @@ spec:
 ```
 
 ### Let's Encrypt Changes
-__NOTE__:  If you used the scripts in the [last post]({% post_url 2020-03-17-aks-external-dns %}) to setup cert-manager and external-dns you'll have to make some changes to external-dns before locking down your services.  This is because the last post used the http resolver for Let's Encrypt to verify domain ownership.  If you limit ingress to your cluster Let's Encrypt won't be able to verify your domains any longer using _http_.  
+__NOTE__:  If you used the scripts in the [last post]({% post_url 2020-03-17-aks-external-dns %}) to setup cert-manager and external-dns you'll have to make some changes to cert-manager before locking down your services.  This is because the last post used the http resolver for Let's Encrypt to verify domain ownership.  If you limit ingress to your cluster Let's Encrypt won't be able to verify your domains any longer using _http_.  
 
 Let's Encrypt has different types of verification for domain ownership and one supported option on Azure is DNS.  When you use DNS to verify domain ownership Let's Encrypt will request certain __txt__ records be created that it can verify before issuing SSL certificates.  Since we used Azure DNS Zones for our DNS entries in the last post we'll make a few modifications so that cert-manager can modify DNS records.
 
