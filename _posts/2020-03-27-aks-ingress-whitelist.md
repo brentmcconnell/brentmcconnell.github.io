@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Whitelist Ingress into AKS Cluster
+title: Whitelist Ingress Access into AKS Cluster
 date: 2020-03-27
 summary: |
  This post will look at limiting ingress access to an Azure Kubernetes Cluster (AKS)
