@@ -112,7 +112,7 @@ metadata:
   name: nginx
   annotations:
     nginx.ingress.kubernetes.io/ingress.class: nginx
-    nginx.ingress.kubernetes.io/whitelist-source-range: "130.211.204.1" 
+    nginx.ingress.kubernetes.io/whitelist-source-range: "0.0.0.0/0"
     cert-manager.io/cluster-issuer: letsencrypt
 spec:
   tls:
