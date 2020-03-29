@@ -77,7 +77,7 @@ At this point if you view the inbound rules on the NSG attached to the agent poo
 
 ### NGINX Ingress Options
 
-Using the Agent Pool NSG is a great way to manage inbound ingress access but it has the limitation of being inflexible.  You are locking down ingress except to what is specified in the provided CIDRs so if you want some services to be exposed to certain IP ranges while other services have different IP ranges you don't have that kind of flexibility.  Enter NGINX.
+Using the Agent Pool NSG is a great way to manage inbound ingress access but it has the limitation of being inflexible.  You are locking down ingress except to the specified CIDRs so if you want some services to be exposed to certain IP ranges while other services have different IP ranges you don't have that kind of flexibility.  Enter NGINX.
 
 NGINX has lots of [configuation options
 available](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/configmap/). 
