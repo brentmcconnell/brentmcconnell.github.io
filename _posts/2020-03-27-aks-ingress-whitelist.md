@@ -12,14 +12,15 @@ categories:
   - Kubernetes
 ---
 
-If you read my [last
-post](https://www.azurepatterns.com/2020/03/17/aks-external-dns) on setting up
-ExternalDNS and CertManager on AKS you may have noticed that ingress to the
-exposed services deployed is open to Internet traffic.  Anyone who
-wants to try to access those services will have the ability to try.
-In this post I'll look at a simple way to lock those services down so that
-only specific addresses have access. And we'll also look at what changes
-we'll need to make to cert-manager once ingress is locked down.
+If you read my last
+post on setting up
+[ExternalDNS and CertManager on AKS](https://www.azurepatterns.com/2020/03/17/aks-external-dns) you may have noticed that ingress to
+published services is open to Internet traffic.  In this post I'll look at two simple ways to lock down services so that
+only specific addresses have ingress access. First we'll cover how to setup a
+network security group on the agent pool subnet to limit access and then we'll
+take a look at some features of NGINX that offer a bit  
+more flexibility to who has access to what.  We'll also look at some changes
+we'll need to make to cert-manager once ingress is locked down.  
 
 ## Problem
 
