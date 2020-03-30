@@ -15,7 +15,7 @@ categories:
 If you read my [last
 post](https://www.azurepatterns.com/2020/03/17/aks-external-dns) on setting up
 ExternalDNS and CertManager on AKS you may have noticed that ingress to the
-exposed services you delpoy be is open to the Internet.  Anyone who
+exposed services deployed is open to Internet traffic.  Anyone who
 wants to try to access those services will have the ability to try.
 In this post I'll look at a simple way to lock those services down so that
 only specific addresses have access. And we'll also look at what changes
