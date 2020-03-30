@@ -18,9 +18,9 @@ post on setting up
 published services is open to Internet traffic.  In this post I'll look at two simple ways to lock down services so that
 only specific addresses have ingress access. First we'll cover how to setup a
 network security group on the agent pool subnet to limit access and then we'll
-take a look at some features of NGINX that offer a bit  
-more flexibility to who has access to what.  We'll also look at some changes
-we'll need to make to cert-manager once ingress is locked down.  
+take a look at some features of NGINX that offer a bit more flexibility to
+who has access to what. We'll also look at some changes we'll need to make to
+cert-manager once ingress is locked down.
 
 ## Problem
 
