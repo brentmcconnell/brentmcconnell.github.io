@@ -94,7 +94,72 @@ That will get you two of the things you need but you'll also need an application
 registration with the correct permissions.  You can do that via the Azure portal
 but you can also use the aad.sh script in the GitHub repository to generate an application
 registration.  This script can run without any parameters and it will output
-your application registration or you can set an environment variable that will
-set the display name of your application registration.
+your application registration or you can set the environment variable
+APPREG_DISPLAY_NAME that will set the display name of your application registration.
+
+```terminal
+>> export APPREG_DISPLAY_NAME==your-app-reg-name
+>> ./aad.sh
+```
+
+This will create an application registration and service principal with the same
+id with the following permissions:
+
+* Azure Service Management
+  * user_impersonation
+* Azure Storage
+  * user_impersonation
+* Microsoft Graph
+  * openid
+  * profile
+  * User.Read
+
+__NOTE:__ This will require an Azure Admin's approval before the application registration can be
+used.  It really depends on what level of permission the user using the
+application registration has.  If they are an admin they can provide admin
+consent when they use the application registration for the first time or they
+can visit the Azure portal or use the az cli.  However, Admin consent
+will be necessary.
+
+Using the stdout from the ./aad.sh script at the end you can now run the
+goazuresample program you compiled using "go build".
+
+Assuming you have the ability to provide Admin consent to an application
+registration your workflow would look something like this:
+
+```terminal
+>> export APPREG_DISPLAY_NAME==your-app-reg-name
+>> ./aad.sh
+...
+...
+APPID:                a6fa0XXX-ZZZZ-4f96-0000-63bbcc1f1aa8
+TENANTID:             4c52aXXX-ZZZZ-4730-1111-c041dd761629
+SUBSCRIPTIONID:       97addXXX-ZZZZ-4e7f-2222-0daaeec2f720
+APPREG_DISPLAY NAME:  brentmcconnellapp
+
+>> az ad app permission admin-consent --id a6fa0XXX-ZZZZ-4f96-0000-63bbcc1f1aa8
+>>
+>>
+>> ./goazuresample \
+>>   --subid 97addXXX-ZZZZ-4e7f-2222-0daaeec2f720 \
+>>   --tenantid 4c52aXXX-ZZZZ-4730-1111-c041dd761629 \
+>>   --appid a6fa0XXX-ZZZZ-4f96-0000-63bbcc1f1aa8
+
+11:22:48: To sign in, use a web browser via https://microsoft.com/devicelogin and enter BXX25QWKT to authenticate.
+11:23:17: Created group: Quickstart-RG
+11:23:17: Creating storageAcct1: acct033865
+
+11:23:36: Completed storage creation acct033865: Succeeded
+11:23:36: Getting access key1 for acct033865
+11:23:37: Completed storage container creation cont033865 
+11:23:37: Uploading file with blob name: file-033865
+
+Do you want to delete the Resource Group Quickstart-RG [y/n]:n
+11:24:06: Leaving Resource Group: Quickstart-RG
+11:24:06: All Done!  Thanks for playing.
+```
+
+And that's it you've created a command line application in Golang that uses
+Azure AD for authentication!
 
 
