@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Authenticate Golang CLI with Azure AD 
+title: Authenticate GO CLI with Azure AD 
 date: 2020-05-02
 summary: |
  Let's build a basic Golang CLI that uses Azure Active Directory Device Token
