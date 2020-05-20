@@ -14,7 +14,7 @@ categories:
 
 If you read my last
 post on setting up
-[ExternalDNS and CertManager on AKS](https://www.azurepatterns.com/2020/03/17/aks-external-dns) you may have noticed that ingress to
+[ExternalDNS and CertManager on AKS]({% post_url 2020-03-17-aks-external-dns %}) you may have noticed that ingress to
 published services is open to Internet traffic.  In this post I'll look at two simple ways to lock down services so that
 only specific addresses have ingress access. First we'll cover how to setup a
 network security group on the agent pool subnet to limit access and then we'll
