@@ -50,7 +50,8 @@ if err != nil {
 
 For more information about authentication options in Golang using AAD you can
 check out this
-[page](https://docs.microsoft.com/en-us/azure/developer/go/azure-sdk-authentication). :w
+[page](https://docs.microsoft.com/en-us/azure/developer/go/azure-sdk-authorization).
+
 This bit of code will prompt the user to use  microsoft.com/devicelogin to enter
 a device token and login to Azure AD.  It will then generate an OAuth token that
 can be used to create an Authorizer that is used in many of the Azure SDK
