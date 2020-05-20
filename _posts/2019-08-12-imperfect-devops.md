@@ -44,7 +44,7 @@ Account's blob storage that we previously configured as a website (see [Azure
 Storage for Your
 Website]({% post_url 2019-07-11-azure-blob-website %}) and
 [Verizon CDN Rules for
-Redirects](https://www.imperfect.today/2019/07/15/verizon-cdn-rules/)). 
+Redirects]({% post_url 2019-07-15-verizon-cdn-rules %}). 
 
 To start with you'll need an Azure DevOps Account which should be easy enough to
 get using GitHub Marketplace... just search for __Azure__ and you should see 2
