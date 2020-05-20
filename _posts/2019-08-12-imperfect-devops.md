@@ -42,7 +42,7 @@ repository each time a commit is made to the __master__ branch of the repository
 Once the build is complete we will also deploy the new files to an Azure Storage
 Account's blob storage that we previously configured as a website (see [Azure
 Storage for Your
-Website](https://www.imperfect.today/2019/07/11/azure-blob-website/) and
+Website]({% post_url 2019-07-11-azure-blob-website %}) and
 [Verizon CDN Rules for
 Redirects](https://www.imperfect.today/2019/07/15/verizon-cdn-rules/)). 
 
