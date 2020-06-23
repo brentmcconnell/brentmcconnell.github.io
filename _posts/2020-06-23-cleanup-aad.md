@@ -34,7 +34,7 @@ account limit.
 I write a lot of automation scripts and one of the things I normally do is
 create a service principal that has limited access to Azure resources,
 typically just enough to get the job done.  This is a principal called [Least
-Privilege](https://www.us-cert.gov/bsi/articles/knowledge/principles/least-privilege).
+Privilege](https://docs.microsoft.com/en-us/azure/role-based-access-control/best-practices).
 Recently, I had been testing a few automation scripts and not doing my due
 diligence to clean up all the service principal objects that were created when I
 got this from the az cli...
