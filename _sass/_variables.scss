@@ -3,7 +3,8 @@ $base-font-size: 18px !default;
 $bold-font-weight: bold !default;
 
 //$font-family: 'Bitter','Quattrocento', 'PT Serif', Georgia, 'Times New Roman', serif !default;
-$font-family: Bitter, Dotum, sans-serif;
+//$font-family: Bitter, Dotum, sans-serif;
+$font-family: Quicksand, sans-serif;
 /* $heading-font-family: $font-family; */ 
 $title-font-family: 'Special Elite', serif !default;
 /* $link-font-family: 'Alegreya Sans SC', sans-serif; */
@@ -19,7 +20,8 @@ $subtitle-font-family: $monospace-font-family;
 
 $line-height: 1.5 !default;
 $title-color: royalblue;
-$heading-font-weight: normal !default;
+$heading-font-weight: bold !default;
+//$heading-font-weight: normal !default;
 //$heading-font-weight: 900 !default;
 $heading-line-height: 1.25 !default;
 $h1-title: 2.5rem !default;
@@ -67,7 +69,8 @@ $green: #00ab37 !default;
 $dark-green: #009f06 !default;
 $light-pink: #ffdddd !default;
 $light-green: #ddffdd !default;
-$dark-gray: #333 !default;
+//$dark-gray: #333 !default;
+$dark-gray: #555 !default;
 $mid-gray: #777 !default;
 $light-gray: #aaa !default;
 $lighter-gray: #eee !default;

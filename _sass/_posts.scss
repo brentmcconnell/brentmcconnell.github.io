@@ -52,13 +52,13 @@ a:active {
 .posts .post-title {
     font-family: $font-family !important;
     font-size: 1.45rem !important;
-    color: #333;
+    color: $dark-gray;
 }
 
 .post-link .post-title {
   margin-top: 0;
   font-size: 1.15rem;
-  font-weight: normal;
+  font-weight: $heading-font-weight;
   font-family:$link-font-family;
   //color: #333;
 } 
