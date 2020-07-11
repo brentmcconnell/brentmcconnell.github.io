@@ -1,22 +1,103 @@
 <head>
-    {% if site.google_analytics %}
-    <!-- <script type="text/javascript"> -->
-    <!--    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ -->
-    <!--    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), -->
-    <!--    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) -->
-    <!--    })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); -->
-    <!--    ga('create', '{{ site.google_analytics }}', 'auto'); -->
-    <!--    ga('send', 'pageview'); -->
-    <!-- </script> -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '{{ site.google_analytics }}');
-    </script>
-    {% endif %}
+  <!-- Only include in production -->
+<style>
+  .cc-btn,  .cc-compliance a:active, .cc-compliance a:focus {
+    text-shadow: unset;
+    text-decoration: none !important;
+    border:unset;
+    background-image: unset;
+  }
+ 
+  a.cc-allow:hover, a.cc-btn:active {
+    text-shadow: unset;
+    border: unset;
+    color: green;
+    text-decoration: none !important;
+    background-image: unset !important;
+  }
+  
+  .cc-compliance a {
+    text-decoration: none !important;
+  }
+
+  .cc-btn {
+    border-style: unset !important;
+    font-family: quicksand;
+  }
+
+  .cc-message {
+    font-family:quicksand;
+  }
+
+  
+</style>
+
+<!-- Add cookie consent css & js -->
+<link rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"
+    data-cfasync="false"></script>
+
+<!-- Add google analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}"></script>
+
+
+<script>
+    // Reads the value of a cookie by name or returns empty string
+    function getCookie(name) {
+        var b = document.cookie.match('(^|[^;]+)\\s*' + name + '\\s*=\\s*([^;]+)');
+        return b ? b.pop() : '';
+    }
+
+    // Actually starting analytics up
+    function addAnalytics() {
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', '{{site.google_analytics}}');
+    }
+
+    // Waiting for the load event
+    window.addEventListener("load", function () {
+        // Reading "cookieconsent_status" cookie
+        const cookieConsent = getCookie('cookieconsent_status');
+
+        // Start analytics if user consented or did not deny
+        if (cookieConsent === 'allow' || cookieConsent === '') {
+            addAnalytics();
+        }
+
+        // Initialise cookie consent banner
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#efefef",
+                    "text": "#404040"
+                },
+                "button": {
+                    "background": "#8ec760",
+                    "text": "#ffffff"
+                }
+            },
+            "type": "opt-out",
+            "content": {
+                "allow": "Approve",
+                "dismiss": "Approve",
+                "deny": "Reject"
+            },
+            // Reload the page on user choice to make sure cookie is set
+            onStatusChange: function (status, chosenBefore) {
+                location.reload();
+            }
+        })
+    });
+</script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title | strip_html }} &#8211; {% endif %}{{ site.title | strip_html }}</title>
@@ -113,16 +194,5 @@
     <link rel="icon" type="image/png" href="{{ "/favicon-32x32.png" | relative_url }}" sizes="32x32">
     <link rel="shortcut icon" href="{{ "/favicon.ico" | relative_url }}">
 
-
-    {% if site.azure_appinsights_key %}
-    <script type="text/javascript">
-       var sdkInstance="appInsightsSDK";window[sdkInstance]="appInsights";var aiName=window[sdkInstance],aisdk=window[aiName]||function(e){
-       function n(e){t[e]=function(){var n=arguments;t.queue.push(function(){t[e].apply(t,n)})}}var t={config:e};t.initialize=!0;var i=document,a=window;setTimeout(function(){var n=i.createElement("script");n.src=e.url||"https://az416426.vo.msecnd.net/next/ai.2.min.js",i.getElementsByTagName("script")[0].parentNode.appendChild(n)});try{t.cookie=i.cookie}catch(e){}t.queue=[],t.version=2;for(var r=["Event","PageView","Exception","Trace","DependencyData","Metric","PageViewPerformance"];r.length;)n("track"+r.pop());n("startTrackPage"),n("stopTrackPage");var s="Track"+r[0];if(n("start"+s),n("stop"+s),n("setAuthenticatedUserContext"),n("clearAuthenticatedUserContext"),n("flush"),!(!0===e.disableExceptionTracking||e.extensionConfig&&e.extensionConfig.ApplicationInsightsAnalytics&&!0===e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)){n("_"+(r="onerror"));var o=a[r];a[r]=function(e,n,i,a,s){var c=o&&o(e,n,i,a,s);return!0!==c&&t["_"+r]({message:e,url:n,lineNumber:i,columnNumber:a,error:s}),c},e.autoExceptionInstrumented=!0}return t
-       }({
-           instrumentationKey:"{{site.azure_appinsights_key}}"
-       });
-       window[aiName]=aisdk,aisdk.queue&&0===aisdk.queue.length&&aisdk.trackPageView({});
-    </script>
-    {% endif %}
 
 </head>

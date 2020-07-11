@@ -2,10 +2,6 @@
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 {% include head.html %}
 <body class="site{% if site.animated %} animated fade-in-down{% endif %}">
-  {% if site.google_tag_manager %}
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  {% endif %}
   {% include sidebar.html %}
   <div class="site-wrap">
     {% include header.html %}
@@ -18,7 +14,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
   {% include footer.html %}
     <script>
       (function(document) {
