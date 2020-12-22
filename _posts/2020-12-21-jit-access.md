@@ -24,7 +24,7 @@ a specific timeframe.
 The problem is simple enough... how do you limit access to your VMs so that only
 users you permit have access to your VMs and only during a time that you allow?
 This is accomplished by configuring some rules on the NSG and/or Azure Firewall that
-protect your VM's access when a request and a timeframe for access are approved.
+protect your VM's access until a request and a timeframe for access are approved.
 The great thing about this is that Azure has wrapped this functionality up into
 a service called [Just-In-Time
 Access](https://docs.microsoft.com/en-us/azure/security-center/just-in-time-explained) and you can activate it today.
