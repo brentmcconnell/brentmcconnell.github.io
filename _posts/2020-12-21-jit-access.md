@@ -41,7 +41,7 @@ from Bash
 
 {% gist b14035fd71516354f15490c343431b01 JIT-Access %}
 
-This script takes a -n <name of VM> and -g <resource group VM lives in> as it's
+This script takes -n (name of VM) and -g (resource group VM lives in) as it's
 only parameters.  It will then suss out that subscription you are running in and
 use the location that the VM lives in to complete it's necessary input.  It also
 relies on have the az cli available for the REST call it makes.  You'll also
