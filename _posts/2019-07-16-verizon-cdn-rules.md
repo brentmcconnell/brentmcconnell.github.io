@@ -75,8 +75,7 @@ we'll use the following values and then __Add__ our rule to the rules engine.
 And that's it... after we wait 4+ hours :(  Once the rule is enabled all users
 will be redirected to https://www.azurepatterns.com and our non-SSL site will
 
-So hopefully between this post and [Part 1]({% post_url 
-2019-07-11-azure-blob-website %}) you won't waste as much time as I did trying
+So hopefully between this post and [Part 1]({% post_url 2019-07-11-azure-blob-website %}) you won't waste as much time as I did trying
 to get all this right.  If this has been helpful or you find any issues 
 feel free to drop me a line and share your thoughts.
 
