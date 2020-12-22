@@ -29,7 +29,8 @@ protect your VM's access when a request and a timeframe for access are approved.
 
 ## Solution
 
-Azure Security Center Just-In-Time Access is a great solution to solve this
+[Azure Security Center Just-In-Time
+Access](https://docs.microsoft.com/en-us/azure/security-center/security-center-just-in-time?tabs=jit-config-asc%2Cjit-request-asc) is a great solution to solve this
 problem with only one downside... It's currently ___not___ supported in the Azure CLI
 or by Terraform.  As of late December 2020 there is work underway in the
 Terraform project to support JIT but not yet available.  I haven't seen any
