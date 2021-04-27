@@ -86,11 +86,6 @@ non-Azure environments.  The main features you get are process automation,
 configuraiton management and update management and it works across both Windows
 and Linux environments.
 
-In this post we'll look primarily at process automation on and for Linux.  Those
-who follow this blog also know that we'll focus on using command line tools and
-try our best to stay out of the portal since everything should be scripted as
-much as possible :).  
-
 ## Basic Vocabulary
 Here is the basic vocabulary we'll use in this blog.
 
