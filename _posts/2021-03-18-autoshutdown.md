@@ -3,31 +3,25 @@ layout: post
 title: Shutdown VMs with Low CPU Usage (Part 1)
 date: 2021-03-18
 summary: |
-  Sometimes it can be very beneficial to your budget to shutdown your VMs
-  when they are idle or underutilized.  In many cases there might be
-  alternative strategies for processing workload like VM scalesets 
-  or Azure Functions that should be explored but in some situations shutting down an existing VM
-  can make a lot of sense.  In this part 1 of a 2 part series we'll look
-  at Azure Monitor and what Alerts are and we'll even explore how to make
-  REST API calls from the az command line.  All this leading to part 2
-  where we put everything together to stop VMs based on an signal sent from
-  Azure Monitor related to CPU usage.
+  Let's have some fun during this episode and save some money at the same time.
+  In this post we'll take a look at how to control costs by automatically shutting
+  down VMs when not in use.
+
 tags: azure techtips
 categories:
   - Tech Tips
   - Azure
 ---
-Let's have some fun during this episode and save some money at the same time.  If you are reading 
-this you probably have VMs in Azure that sometimes go unused and run your
-monthly costs up.  Let's say you use an M128dmsv2 machine with 128 cores for
-some kind of big honk'n workload.  That machine costs about ~$27/hour in March
-2021.  If you have a long running job on that machine that is not scripted to
-bring the machine up.. process work.. and then go away.. you could be costing
-yourself hundreds of \$ just in overnight fees.
+Sometimes it can be very beneficial to your budget to shutdown your VMs
+when they are idle or underutilized.  In many cases there might be
+alternative strategies for processing workload like VM scalesets 
+or Azure Functions that should be explored but in some situations shutting down an existing VM
+can make a lot of sense.  In this part 1 of a 2 part series we'll look
+at Azure Monitor and what Alerts are and we'll even explore how to make
+REST API calls from the az command line.  All this leading to part 2
+where we put everything together to stop VMs based on an signal sent from
+Azure Monitor related to CPU usage.
 
-Let's make sure this doesn't happen to you and configure Azure so that
-this VM will be triggered to autoshutdown if it's not being used for a period
-of time.
 
 ## Problem
 The problem is pretty basic...  how do we stop Azure VMs from running if noone is
