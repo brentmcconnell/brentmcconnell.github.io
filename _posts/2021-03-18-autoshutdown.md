@@ -19,7 +19,7 @@ or Azure Functions that should be explored but in some situations shutting down 
 can make a lot of sense.  In this part 1 of a 2 part series we'll look
 at Azure Monitor and what Alerts are and we'll even explore how to make
 REST API calls from the az command line.  All this leading to part 2
-where we put everything together to stop VMs based on an signal sent from
+where we put everything together to stop VMs based on a signal sent from
 Azure Monitor related to CPU usage.
 
 
