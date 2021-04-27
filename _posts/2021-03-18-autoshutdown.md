@@ -70,12 +70,12 @@ other resources and objects in our resource group.
 
 ```
 
-Once all this is created you'll need to login to the portal (I know, I know) and
-create a "Run As" account in the automation account from above.  There is some
+Once all this is created you'll still need to login to the portal (I know, I know) and
+create a "Run As" account in the Automation Account we created above.  There is some
 [good
 documentation](https://docs.microsoft.com/en-us/azure/automation/create-run-as-a
 ccount) on this step so I won't repeat it here.  We could do this step via the
-REST API as well but this post is already going to take too long.  Perhaps in a
+REST API as well but this post is already going to be pretty long, perhaps in a
 future post we'll take a stab at creating the Run As account in Automation.
 
 
@@ -284,13 +284,12 @@ that we know our runbook is expecting.
 We did quite a bit in this post and we are only half way there.  But the rest is
 pretty easy and we'll take that up in the next post.  For those of you paying
 attention you'll notice that the webhook doesn't have any security on it.  This
-means that someone who determines you URI could also stop from VM.  Not what you
+means that someone who determines you URI could also stop your VM... not what you
 want. The [documentation
 above](https://docs.microsoft.com/en-us/azure/automation/automation-webhooks#web
 hook-security) touches on this so I'm going to reference here gain. It's not
-atoo hard you'll just need to include some logic in your runbook
+too hard you'll just need to include some logic in your runbook
 to ensure it's being called from your webhook.
-
 
 
 
