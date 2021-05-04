@@ -1,8 +1,21 @@
 blockquote {
-  border-left: 3px solid #7a7a7a;
-  //font-style: italic;
-  //margin-left: $space-1;
-  //padding: $space-1;
+  //border-left: 3px solid #7a7a7a;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  background-color: #f0f7fb;
+  border: solid 1px #3498db;
+  border-radius: 6px;
+  line-height: 18px;
+  overflow: hidden;
+  padding: 12px;
+  font-family: $link-font-family !important;
+}
+
+blockquote::before
+{
+  content: 'Note: ';
+  font-weight: bold;
+  padding-bottom: 15px;
 }
 
 blockquote footer {
