@@ -124,7 +124,6 @@ action we'd have...
 
 ```
 
-
 ## Create an Alert and Criteria
 Now that we have our action group created we'll create an Alert with criteria.
 In this example we'll look at a 15m window to see if the average CPU has been
@@ -152,6 +151,12 @@ that works for you and your team but it will be worth it.
 >>   --resource-group happy-rg -o table
 >>
 ```
+
+> Note: A metric alert that's in a "Fired" state would not trigger again until it's
+> resolved. This is done to reduce noise. Resolution happens automatically after
+> 3 healthy evaluations of your condition (evaluations where the condition isn't
+> breached), and there's no way to manually change the monitor condition to
+> "Resolved".
 
 ### Summary 
 And that's it.  If you completed all the steps from Part 1 and Part 2 of this
