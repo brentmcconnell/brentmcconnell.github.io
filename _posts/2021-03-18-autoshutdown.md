@@ -276,7 +276,7 @@ that we know our runbook is expecting.
 
 ```terminal
 >> # Call our webhook with a bit of JSON to tell it what resource to act on
->> curl -d '{"Name":"myHappyVM","ResourceGroupName":"happy-rg"}' -X POST $WEBHOOK_URL
+>> curl -d '{"Name":"myHappyVM","ResourceGroup":"happy-rg"}' -X POST $WEBHOOK_URL
 >> {"JobIds":["8b9349e3-a2f8-433e-8b97-0583a9fd5e50"]}
 ```
 
