@@ -152,7 +152,7 @@ that works for you and your team but it will be worth it.
 >>
 ```
 
-> Note: A metric alert that's in a "Fired" state would not trigger again until it's
+> A metric alert that's in a "Fired" state would not trigger again until it's
 > resolved. This is done to reduce noise. Resolution happens automatically after
 > 3 healthy evaluations of your condition (evaluations where the condition isn't
 > breached), and there's no way to manually change the monitor condition to
