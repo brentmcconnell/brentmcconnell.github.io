@@ -236,17 +236,23 @@ generated uri we can use for our webhook.
 > session if you plan to resume your work at a later date.
 
 ```shell
-The $WEBHOOK_URL that is in this session contains a token that will not
-be accessible from the az cli again.  If you are working through this blog post
-know that you'll need to store the $WEBHOOK_URL somewhere before you close your
-session if you plan to resume your work at a later date.
+The $WEBHOOK_URL that is in this session contains a token that will not be
+accessible from the az cli again. If you are working through this blog post know
+that you'll need to store the $WEBHOOK_URL somewhere before you close your
+session if you plan to resume your work at a later date. 
+```
+
+```note
+The $WEBHOOK_URL that is in this session contains a token that will not be
+accessible from the az cli again. If you are working through this blog post know
+that you'll need to store the $WEBHOOK_URL somewhere before you close your
+session if you plan to resume your work at a later date. 
 ```
 
 For the next API call we need a bit of JSON to pass in the body of the POST
 request.
 
 ```terminal
-
 >> WEBHOOK_NAME=StopVMWebhook
 >> RUNBOOK_NAME=StopVM
 >> DAYS_TILL_EXPIRE=90
@@ -270,7 +276,6 @@ request.
 >> az rest --method PUT \
 >>   --body $JSON \
 >>   --url https://management.azure.com/subscriptions/\{subscriptionId\}/resourceGroups/${RG}/providers/Microsoft.Automation/automationAccounts/${AUTO}/webhooks/${WEBHOOK_NAME}\?api-version\=2015-10-31 
-
 ```
 
 And that is that!!  We now have a webhook that we can call to execute the StopVm
