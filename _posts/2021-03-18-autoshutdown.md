@@ -220,13 +220,11 @@ URI](https://docs.microsoft.com/en-us/rest/api/automation/webhook/generateuri)
 and save it to an environment variable.
 
 ```terminal
-
->> export RG=happy-rg
->> export AUTO=myAutomationAccount
->> URL=$(az rest --method post --url https://management.azure.com/subscriptions/\{subscriptionId\}/resourceGroups/${RG}/providers/Microsoft.Automation/automationAccounts/${AUTO}/webhooks/generateUri\?api-version\=2015-10-31)
->> export WEBHOOK_URL=$(echo $URL | tr -d '"')
->> echo $WEBHOOK_URL
-
+export RG=happy-rg
+export AUTO=myAutomationAccount
+URL=$(az rest --method post --url https://management.azure.com/subscriptions/\{subscriptionId\}/resourceGroups/${RG}/providers/Microsoft.Automation/automationAccounts/${AUTO}/webhooks/generateUri\?api-version\=2015-10-31)
+export WEBHOOK_URL=$(echo $URL | tr -d '"')
+echo $WEBHOOK_URL
 ```
 
 Now we have an environment variable called $WEBHOOK_URL that contains the
@@ -236,6 +234,13 @@ generated uri we can use for our webhook.
 > be accessible from the az cli again.  If you are working through this blog post
 > know that you'll need to store the $WEBHOOK_URL somewhere before you close your
 > session if you plan to resume your work at a later date.
+
+```note
+The $WEBHOOK_URL that is in this session contains a token that will not
+be accessible from the az cli again.  If you are working through this blog post
+know that you'll need to store the $WEBHOOK_URL somewhere before you close your
+session if you plan to resume your work at a later date.
+```
 
 For the next API call we need a bit of JSON to pass in the body of the POST
 request.

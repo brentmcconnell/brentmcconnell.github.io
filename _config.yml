@@ -143,6 +143,7 @@ plugins:
   - jekyll-sitemap
   - jemoji
   - jekyll-gist
+  - rouge
 # https://github.com/jekyll/jekyll/issues/2938
 exclude:
   - Gemfile

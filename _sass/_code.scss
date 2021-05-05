@@ -70,6 +70,26 @@ pre a:only-of-type::before {
   padding: 10px;
 }
 
+.language-note {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  background-color: #f0f7fb;
+  border: solid 1px $dark-blue;
+  border-radius: 6px;
+  line-height: 18px;
+  overflow: hidden;
+  padding: 12px;
+  font-family: $font-family !important;
+  
+  &::before
+  {
+    content: 'Note: ';
+    font-weight: bold;
+    font-size: 1em;
+    color: $dark-blue;
+  }
+}
+
 
 .language-terminal {
   position: relative;
