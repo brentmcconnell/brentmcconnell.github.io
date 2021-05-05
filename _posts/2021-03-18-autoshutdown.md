@@ -272,11 +272,31 @@ runbook.
 Now that we have a webhook connected up to our runbook and a VM we created
 earlier, let's test our webhook and see if it works as expected.  For this we'll
 use __curl__ to do a POST to our webhook and include a couple of pieces of info
-that we know our runbook is expecting.
+that we know our runbook is expecting.  If this part of the post doesn't make
+sense you can review the runbook we created earlier and look at the logic we
+used.  We are using a bit of JSON that represents the bare minimum of the info
+we'll receive from a live webhook when it's fired.  
+
+```json
+{
+  "schemaId":"AzureMonitorMetricAlert",
+  "data":
+  {
+    "context":
+    {
+        "resourceGroupName":"happy-rg",
+        "resourceName":"MyHappyVM",
+        "resourceType":"Microsoft.Compute/virtualMachines"
+    }
+  }
+}
+```
+Put this bit of json in a file called __body.json__ and save it in your terminal
+session then use the command below to test our webhook.
 
 ```terminal
 >> # Call our webhook with a bit of JSON to tell it what resource to act on
->> curl -d '{"resourceName":"myHappyVM","resourceGroupName":"happy-rg"}' -X POST $WEBHOOK_URL
+>> curl -d @body.json -X POST $WEBHOOK_URL
 >> {"JobIds":["8b9349e3-a2f8-433e-8b97-0583a9fd5e50"]}
 ```
 
