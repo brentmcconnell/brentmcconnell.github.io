@@ -287,7 +287,8 @@ we'll receive from a live webhook when it's fired.
         "resourceGroupName":"happy-rg",
         "resourceName":"MyHappyVM",
         "resourceType":"Microsoft.Compute/virtualMachines"
-    }
+    },
+    "status": "Fired"
   }
 }
 ```
