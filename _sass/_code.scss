@@ -71,8 +71,9 @@ pre a:only-of-type::before {
 }
 
 .language-note {
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  position: relative;
   background-color: #f0f7fb;
   border: solid 1px $dark-blue;
   border-radius: 6px;
@@ -84,6 +85,10 @@ pre a:only-of-type::before {
   &::before
   {
     content: 'Note: ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     font-weight: bold;
     font-size: 1em;
     color: $dark-blue;
