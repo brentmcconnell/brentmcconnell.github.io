@@ -93,6 +93,14 @@ pre a:only-of-type::before {
     font-size: 1em;
     color: $dark-blue;
   }
+  
+  .highlight {
+    margin: 0;
+    padding: 0;
+    background-color: initial;
+    color: red;
+  }
+
 }
 
 
