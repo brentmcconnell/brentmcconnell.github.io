@@ -150,8 +150,11 @@ components of what we are doingk
 ![Overview](/images/2021-03-18-autoshutdown/webhook-data-properties.png){:
 .shadow .outline}
 
-Below is a VERY simple Powershell script that will stop a VM using some data
-passed in via the webhook.  Using the script below create a file on your local harddrive called __stopvm.ps1__.
+Below is a simple Powershell script that will stop a VM using some data
+passed in via the webhook.   You can definitely add more logic to this
+especially around verification of who is calling the runbook or what schema is
+be used but this should get us started. Using the script below create a file on
+your local harddrive called __stopvm.ps1__.
 
 {% gist  5efb6fcfec14ebf7b421e2daaf4445f0 %}
 
