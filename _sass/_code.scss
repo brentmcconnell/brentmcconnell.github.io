@@ -70,40 +70,6 @@ pre a:only-of-type::before {
   padding: 10px;
 }
 
-.language-note {
-  -moz-border-radius: $border-radius;
-  -webkit-border-radius: $border-radius;
-  position: relative;
-  background-color: #f0f7fb;
-  border: solid 1px $dark-blue;
-  border-radius: 6px;
-  line-height: 18px;
-  overflow: hidden;
-  padding: 12px;
-  font-family: $font-family !important;
-  
-  &::before
-  {
-    content: 'Note: ';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    font-weight: bold;
-    font-size: 1em;
-    color: $dark-blue;
-  }
-  
-  .highlight {
-    margin: 0;
-    padding: 0;
-    background-color: initial;
-    color: red;
-  }
-
-}
-
-
 .language-terminal {
   position: relative;
   margin-bottom: 1.5em;

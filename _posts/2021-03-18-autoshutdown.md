@@ -235,20 +235,6 @@ generated uri we can use for our webhook.
 > know that you'll need to store the $WEBHOOK_URL somewhere before you close your
 > session if you plan to resume your work at a later date.
 
-```shell
-The $WEBHOOK_URL that is in this session contains a token that will not be
-accessible from the az cli again. If you are working through this blog post
-know that you'll need to store the $WEBHOOK_URL somewhere before you close your
-session if you plan to resume your work at a later date. 
-```
-
-```note
-The $WEBHOOK_URL that is in this session contains a token that will not be
-accessible from the az cli again. If you are working through this blog post
-know that you'll need to store the $WEBHOOK_URL somewhere before you close your
-session if you plan to resume your work at a later date. 
-```
-
 For the next API call we need a bit of JSON to pass in the body of the POST
 request.
 
