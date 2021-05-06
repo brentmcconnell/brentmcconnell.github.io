@@ -36,7 +36,6 @@ being used.
 For those of you that may have setup action groups to call runbooks in the
 Azure portal you may have noticed a note when configuring the runbook.
 
-> info "The Info Header"
 > If this action is a user runbook and you are changing the schema type then you
 > may need to adjust the user runbook to handle the new schema type.  If this
 > action is a built-in runbook then you can choose any schema type and the
