@@ -8,4 +8,5 @@ group :jekyll_plugins do
     gem 'jemoji'
     gem 'rouge'
     gem 'jekyll-gist'
+    gem 'jekyll-sitemap'
 end
