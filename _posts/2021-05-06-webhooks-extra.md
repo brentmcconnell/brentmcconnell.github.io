@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Azure Webhook and Alert Learnings
+title: Azure Webhook and Alert Tips
 date: 2021-05-06
 summary: |
  In this post I'll look at a few of the learnings from the last 2 posts that
