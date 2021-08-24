@@ -1,5 +1,5 @@
   <div class="crosslinks">
-    {% for crosslinks in site.crosslinks %}
+    {% for crosslinks in site.crosslinks | sort: "order_by" %}
     <a class="sidebar-nav-item" href="{{ crosslinks.link }}">{{ crosslinks.name }}</a>
     {% endfor %}
   </div>
