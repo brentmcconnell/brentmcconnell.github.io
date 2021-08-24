@@ -1,5 +1,5 @@
 ---
 name: Azure Tips and Tricks
 link: https://microsoft.github.io/AzureTipsAndTricks/
-order: 2
+order: 3
 ---
