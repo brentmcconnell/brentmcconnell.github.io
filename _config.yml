@@ -92,6 +92,10 @@ share_reddit: true
 share_stumbleupon: false
 share_hackernews: false
 
+collections:
+  crosslinks:
+    sort_by: order
+
 text:
   category:
     label: 'Category'
