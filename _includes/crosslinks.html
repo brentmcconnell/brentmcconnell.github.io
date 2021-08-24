@@ -1,5 +1,6 @@
   <div class="crosslinks">
-    {% for crosslinks in site.crosslinks | sort: "order_by" %}
+    {% assign sorted_links = site.crosslinks | sort: "order" %}
+    {% for crosslinks in sorted_links %}
     <a class="sidebar-nav-item" href="{{ crosslinks.link }}">{{ crosslinks.name }}</a>
     {% endfor %}
   </div>
