@@ -60,6 +60,7 @@ layout: default
               {{ post.excerpt }}
           </span>
         </div>
+      {% endfor %}
     </div>
 </div>
 {% endraw %}
