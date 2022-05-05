@@ -14,7 +14,7 @@ categories:
 I recently had a customer who wanted to authenticate user access to a basic website
 that was hosted in Azure Storage Accounts. The basic [static website](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website) functionality that
 is bundled with Storage Accounts doesn't provide this.  There are a few ways we
-might have approached this, for instance we could have potenially used [Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/),
+might have approached this, for instance we could have potentially used [Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/),
 however what if we just used their existing App Service plan and the
 built in authentication for [Web Apps](https://docs.microsoft.com/en-us/azure/app-service/).
 
