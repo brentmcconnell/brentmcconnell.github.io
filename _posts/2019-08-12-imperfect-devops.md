@@ -8,6 +8,7 @@ tags: website devops pipeline
 categories:
   - Azure
   - Linux
+  - DevOps
 ---
 Haven't you always wanted to setup your website so that every change you make to
 your repo produces the cooresponding change in production automatically?  Well in this

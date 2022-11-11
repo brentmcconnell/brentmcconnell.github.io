@@ -9,6 +9,7 @@ tags: azure techtips github
 categories:
   - Tech Tips
   - Azure
+  - DevOps
 ---
 Have you ever wanted to test out configuration of resources setup quickly in Azure using devops
 pipelines and been frustrated by how long it takes to get your project
