@@ -11,7 +11,6 @@ categories:
   - Azure
   - DevOps
 ---
-## Introduction
 I'll bet you're here because you started trying to setup SSL on AKS and wanted to use the CSI driver with Azure KeyVault and realized it wasn't as easy as everyone led you to believe ;).  In this post we'll walk through the steps necessary to set it correctly using KeyVault.  There is also a companion [GitHub repo](http://github.com/brentmcconnell/ssl-with-csi-on-aks).
 
 ## Solution
