@@ -191,4 +191,5 @@ session... but I'll never tell which parts ;)
 * [Azure OpenAI Service Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/)
 * [Quickstart for Azure OpenAI
 Studio](https://learn.microsoft.com/en-us/azure/ai-services/openai/quickstart)
+[Azure OpenAI Blogs](https://azure.microsoft.com/en-us/blog/tag/ai/)
 
